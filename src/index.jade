@@ -11,61 +11,71 @@ html
 
     article
 
-      section
+      section(data-bespoke-hash='title')
         h1 PHPStorm: Not yo mama’s IDE
+        .small You get WebStorm for free* ("PhpStorm comes with all features of WebStorm and adds full-fledged support for PHP and Databases/SQL")
 
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+      section(data-bespoke-hash='contents')
+        h2 Table of Contents
+        p Illustrating the following claims from the <a href="https://www.jetbrains.com/phpstorm/">PHPStorm Website</a>
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
+          li Intelligent Coding Assistance
+          li Smart Code Navigation
+          li Fast and Safe Refactoring
+          li Easy Debugging and Testing
+          li: strike Frameworks Support
+          li VCS, Deployments, Tools
+        p Workflow enhancements
         ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
+          li Useful plugins
+          li Code Formatting
+
+      section(data-bespoke-hash='assistance')
+        h2 Intelligent Coding Assistance
+        img.image-header(src='images/1-assistance.png')
+
+      section(data-bespoke-hash='navigation')
+        h2 Smart Code Navigation
+        img.image-header(src='images/2-navigation.png')
+
+      section(data-bespoke-hash='refactoring')
+        h2 Fast and Safe Refactoring
+        img.image-header(src='images/3-refactoring.png')
+
+      section(data-bespoke-hash='debugging')
+        h2 Easy Debugging and Testing
+        img.image-header(src='images/4-debugging.png')
+
+      section(data-bespoke-hash='vcs')
+        h2 VCS, Deployments, Tools
+        img.image-header(src='images/5-vcs.png')
+
+      section.emphatic-text(data-bespoke-hash='workflow', data-bespoke-backdrop='emphatic')
+        h2 Workflow enhancements
         ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+          li Useful plugins
+          li Code Formatting
+
+      section(data-bespoke-hash='plugins')
+        h2 Useful plugins
+        ul
+          li .ignore - Supports just about every vcs ignore file in existence
+          li Apache config (.htaccess) support - Syntax highlighting and code completion
+          li Atlassian Connector for IntelliJ IDE - Integration JIRA workflows directly in the IDE. Bye bye web browser!
+          li Behat Support - Behat BDD test framework for PHP
+          li CodeGlance - Embeds a code minimap
+          li Dummy Text Generator - Generate dummy text from several genres like Pirate Lingo or Science Fiction
+          li Git Flow Integration
+          li NodeJS - Congratulations, you can now work with the primary project type WebStorm uses
+
+      section(data-bespoke-hash='formatting')
+        h2 Code Formatting
+        p No more religious wars over what works better, tab or spaces. There is fine-grained controls for
+          | determining just how verbose or concise the formatting should be.
+
+      section(data-bespoke-hash='questions')
+        h2 Questions?
+        p Tough shit :>
+        p Grab the <a href="https://www.jetbrains.com/phpstorm/download/">30 day trial</a>
 
     script(src='build/build.js')
