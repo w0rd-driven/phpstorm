@@ -1,0 +1,7 @@
+{
+  "name": "presentation-phpstorm-not-yo-mamas-ide",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages"
+  }
+}
