@@ -1,0 +1,25 @@
+{
+  "name": "rethinkgroup/api_auth",
+  "description": "API: User Authentication",
+  "minimum-stability": "dev",
+  "prefer-stable": false,
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jeremy Brayton",
+      "email": "jbrayton@rethinkgroup.org"
+    }
+  ],
+  "require": {
+    "swiftmailer/swiftmailer": "5.2.1",
+    "slim/slim": "2.4.2",
+    "monolog/monolog": "1.10.0",
+    "slim/logger": "0.1.0",
+    "flynsarmy/slim-monolog": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "model\\": "v1/model"
+    }
+  }
+}

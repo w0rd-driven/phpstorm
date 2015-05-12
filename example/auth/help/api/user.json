@@ -1,0 +1,79 @@
+{
+    "basePath": "/auth/v1",
+    "swaggerVersion": "1.2",
+    "apiVersion": "1.0.0",
+    "resourcePath": "/user",
+    "apis": [
+        {
+            "path": "/user/forgotPassword/{email}",
+            "operations": [
+                {
+                    "method": "POST",
+                    "summary": "Send user credentials by email",
+                    "nickname": "userForgotPassword",
+                    "type": "User",
+                    "parameters": [
+                        {
+                            "paramType": "path",
+                            "name": "email",
+                            "type": "string",
+                            "required": true,
+                            "description": "The email address. Use jbrayton@rethinkgroup.org for testing."
+                        }
+                    ],
+                    "responseMessages": [
+                        {
+                            "code": 400,
+                            "message": "Invalid email address supplied."
+                        },
+                        {
+                            "code": 404,
+                            "message": "Object not found."
+                        }
+                    ],
+                    "notes": ""
+                }
+            ]
+        }
+    ],
+    "models": {
+        "User": {
+            "id": "User",
+            "properties": {
+                "userId": {
+                    "type": "string"
+                },
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "userName": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "level": {
+                    "type": "integer"
+                },
+                "isPrimary": {
+                    "type": "boolean"
+                },
+                "notification": {
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "produces": [
+        "application/json"
+    ]
+}

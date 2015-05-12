@@ -1,0 +1,3 @@
+
+	Your email address is: {emailAddress}
+	Your password is: {password}
