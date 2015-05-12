@@ -1,0 +1,3 @@
+#!/bin/sh
+# Correct PHP session writing
+sudo chmod 777 /var/lib/php/session
