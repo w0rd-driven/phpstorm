@@ -48,11 +48,12 @@ vagrantfile-local:
                         - '-z'
                     exclude:
                         - .vagrant/
+                        - .git/
                     auto: 'false'
             Fl2mbjzmOims:
                 owner: www-data
                 group: www-data
-                source: /projects/node/phpstorm/example/
+                source: /projects/node/phpstorm/example/api/
                 target: /var/www/api/
                 sync_type: default
                 rsync:
@@ -62,7 +63,7 @@ vagrantfile-local:
                         - '-z'
                     exclude:
                         - .vagrant/
-                        - vagrant/
+                        - .git/
                     auto: 'false'
             YnNjje07B8Gu:
                 owner: www-data
@@ -77,6 +78,7 @@ vagrantfile-local:
                         - '-z'
                     exclude:
                         - .vagrant/
+                        - .git/
                     auto: 'false'
         usable_port_range:
             start: 10200
