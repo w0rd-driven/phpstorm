@@ -1,3 +1,5 @@
+@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
+
 // New to Stylus? Check out http://learnboost.github.io/stylus
 // Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
 
@@ -7,6 +9,14 @@
 @import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
 
+.image-logo {
+  width: 10%;
+}
+
+.image-teaser {
+  max-width: 75%;
+}
+
 .small {
   font-size xx-small;
 }
@@ -15,6 +25,36 @@
   width: 85%;
 }
 
-.image-logo {
-  width: 10%;
-}
+header,
+footer
+  margin: 0.5em
+  padding: 0.3em
+
+header
+  fixed: top left
+  color: white;
+  z-index: 1;
+
+footer
+  display: block
+  fixed: bottom right
+  opacity: .3
+  border-radius: 3px
+  background: #ffffff66
+  a
+    display: block
+    color: black
+  &:hover
+    opacity: 1
+
+.two-columns
+  column-count: 2;
+
+.columns.two .column
+  width: 50%
+
+.columns.two .column.left
+  float: left
+
+.columns.two .column.right
+  float: right
