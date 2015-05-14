@@ -36,6 +36,7 @@
 	 * )
 	 */
 	$app->post('/user/forgotPassword/:email', function ($email) use ($app) {
+		//! TODO: 2-Navigation
 		$user = new \model\User($app->log);
 		$results = $user->forgotPassword($email);
 		echo json_encode($results);

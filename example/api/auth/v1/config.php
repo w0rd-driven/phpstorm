@@ -94,6 +94,7 @@
 				$headers .= "\n$name: $value";
 			}
 
+			//! TODO: 3-Refactor
 			$app->log->debug("---------------");
 			$app->log->debug("Headers: " . $headers);
 			$app->log->debug("IP: " . $request ->getIp());

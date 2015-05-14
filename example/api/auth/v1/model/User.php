@@ -62,6 +62,8 @@
 			$logger->info("User->ctor()");
 
 			$this->logger = $logger;
+			//! TODO: 1-Assistance
+			//$this->
 		}
 
 		public function forgotPassword($email) {
@@ -126,6 +128,7 @@
 						$this->isPrimary = isPrimary($userDetailValue);
 
 						$failures = $this->generateEmail();
+						//! TODO: 4-Debugging
 						if (is_null($failures)) {
 							$result = true;
 						}
@@ -158,6 +161,7 @@
 
 			$result = null;
 
+			//! TODO: 5-VCS
 			$toAddress = ["{$this->email}" => "{$this->firstName} {$this->lastName}"];
 			$fromAddress = "no-reply@rethinkgroup.org";
 			$bounceAddress = "bounce@rethinkgroup.org";
