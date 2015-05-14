@@ -17,7 +17,7 @@ bespoke.from('article', [
   keys(),
   touch(),
   pdf(),
-  bullets('li, .bullet'),
+  bullets('ul:not(.no-bullets) li, ol:not(.no-bullets) li, .bullet'),
   backdrop(),
   scale(),
   hash(),
