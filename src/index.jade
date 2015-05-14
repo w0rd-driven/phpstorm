@@ -8,6 +8,7 @@ html
     link(rel='stylesheet', type='text/css', href='build/build.css')
 
   body
+    header PHPStorm: Not yo mama’s IDE
 
     article
 
@@ -17,18 +18,41 @@ html
 
       section(data-bespoke-hash='contents')
         h2 Table of Contents
-        p Illustrating the following claims from the <a href="https://www.jetbrains.com/phpstorm/">PHPStorm Website</a>
-        ul
-          li Intelligent Coding Assistance
-          li Smart Code Navigation
-          li Fast and Safe Refactoring
-          li Easy Debugging and Testing
-          li: strike Frameworks Support
-          li VCS, Deployments, Tools
-        p Workflow enhancements
-        ul
-          li Useful plugins
-          li Code Style
+        .bullet(style='width:82%')
+          ul.no-bullets Code Editor vs IDE
+            li Tools like Coda versus PHPStorm
+        .bullet
+          ul.no-bullets Illustrating the following claims from the <a href="https://www.jetbrains.com/phpstorm/">PHPStorm Website</a>
+            li Intelligent Coding Assistance
+            li Smart Code Navigation
+            li Fast and Safe Refactoring
+            li Easy Debugging and Testing
+            li: strike Frameworks Support
+            li VCS, Deployments, Tools
+        .bullet(style='width:82%')
+          ul.no-bullets Workflow enhancements
+            li Useful plugins
+            li Code Style
+
+      section(data-bespoke-hash='versus')
+        h2 Code Editor vs IDE
+        .columns.two
+          .column.left.bullet Editor
+            ul.no-bullets
+              li lightweight/fast
+              li file/folders
+              li many languages
+              li many workflows
+              li keyboard centered
+          .column.right.bullet IDE
+            ul.no-bullets
+              li project systems
+              li code understanding
+              li debug
+              li integrated build
+              li designers
+              li ALM integration
+              li platform tools
 
       section(data-bespoke-hash='assistance')
         h2 Intelligent Coding Assistance
@@ -85,5 +109,8 @@ html
         h2 Questions?
         p Tough shit :>
         p Grab the <a href="https://www.jetbrains.com/phpstorm/download/">30 day trial</a>
+
+    footer
+      a(href="http://braytonium.com") braytonium.com
 
     script(src='build/build.js')
