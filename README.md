@@ -1,4 +1,4 @@
-# PHPStorm: Not yo mama’s IDE
+# [PHPStorm: Not yo mama’s IDE](http://w0rd-driven.github.io/phpstorm/)
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
 ## View slides locally
